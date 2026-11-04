@@ -1,0 +1,98 @@
+═══════════════════════════════════════════════════════════════════
+  🌎 SITIO WEB "SABOR PERUANO" — GUÍA PARA PUBLICARLO EN INTERNET
+═══════════════════════════════════════════════════════════════════
+
+Este paquete contiene tu sitio web completo. Sigue estos pasos para
+tenerlo en internet GRATIS en unos 15 minutos.
+
+─────────────────────────────────────────────────
+ PARTE A) PUBLICAR EN INTERNET CON VERCEL (gratis)
+─────────────────────────────────────────────────
+
+PASO 1 — Descarga e instala Git (una sola vez)
+  1. Entra a https://git-scm.com/downloads
+  2. Descarga la versión para Windows y haz clic en Instalar
+     (deja todas las opciones por defecto, siguiente → siguiente)
+
+PASO 2 — Crea tu cuenta de GitHub (gratis)
+  1. Entra a https://github.com y haz clic en "Sign up"
+  2. Elige un usuario, correo y contraseña. Verifica tu correo.
+
+PASO 3 — Sube el proyecto a GitHub
+  1. Descomprime este paquete (ZIP) en tu computadora.
+     Quedará una carpeta, por ejemplo "sabor-peruano-web".
+  2. Entra a https://github.com/new
+  3. Nombre del repositorio:  sabor-peruano-web
+  4. Déjalo en "Public" y haz clic en "Create repository".
+  5. En la página que aparece, haz clic en el enlace
+     "uploading an existing file" (subir archivos existentes).
+     Si NO ves ese enlace: haz clic en la palabra "README" dentro de
+     la frase "We recommend every repository include a README...",
+     escribe una línea y confirma con el botón verde; entonces ya
+     aparecerá el botón "Add file" → "Upload files".
+  6. Abre la carpeta descomprimida, selecciona TODO lo que está
+     DENTRO (src, public, package.json, etc.) y arrástralo al área
+     de subida. Ojo: NO subas el archivo ZIP en sí, sube lo que hay
+     adentro; tampoco subas node_modules ni .next si los ves.
+  7. Haz clic en el botón verde "Commit changes" y espera.
+
+  💡 Alternativa con Git (si prefieres comandos), dentro de la carpeta:
+     git init
+     git add .
+     git commit -m "Mi sitio web"
+     git branch -M main
+     git remote add origin https://github.com/rodriguezingap-lang/sabor-peruano-web.git
+     (ese es tu repositorio; si cambias de usuario, ajusta la dirección)
+     git push -u origin main
+
+PASO 4 — Publica en Vercel (gratis)
+  1. Entra a https://vercel.com y haz clic en "Sign Up".
+  2. Elige "Continue with GitHub" (se conecta a tu cuenta del paso 2).
+  3. Haz clic en "Add New..." → "Project".
+  4. Busca el repositorio "sabor-peruano-web" y clic en "Import".
+  5. No cambies ninguna opción. Haz clic en "Deploy".
+  6. Espera 2-3 minutos. 🎉
+  7. Vercel te dará tu dirección, algo como:
+     https://sabor-peruano-web.vercel.app
+     ¡Esa es tu página web, lista para compartir por WhatsApp,
+     Facebook y TikTok!
+
+PASO 5 — Cada vez que cambies algo
+  1. Edita el archivo src/config/site.ts (nombre, precios, fotos...).
+  2. Sube los archivos cambiados a GitHub (igual que el paso 3).
+  3. Vercel actualizará tu web sola en 1-2 minutos.
+
+─────────────────────────────────────────────────
+ PARTE B) CÓMO EDITAR TU SITIO MÁS ADELANTE
+─────────────────────────────────────────────────
+
+Todo el contenido vive en UN archivo:  src/config/site.ts
+
+  • Nombre, WhatsApp, dirección, horarios → al inicio del archivo
+  • Precios → busca "precio:" y cambia el número
+  • Fotos → guarda tu foto en public/images/ y escribe
+      imagen: "/images/tu-foto.jpg"
+  • Platos nuevos → copia un bloque { ... } completo y cambia datos
+  • Horarios, historia, redes sociales → también ahí
+  • Ubicación del mapa → busca "mapaBusqueda" y cambia el texto
+    (la dirección que se muestra como texto está en "direccion")
+
+Recuerda: después de editar, sube los cambios a GitHub y Vercel
+actualiza tu web automáticamente.
+
+─────────────────────────────────────────────────
+ PARTE C) EXTRAS RECOMENDADOS (gratis)
+─────────────────────────────────────────────────
+
+  1. Google Business Profile: https://business.google.com
+     → Aparecerás en Google Maps al buscar "comida rápida en Nasca".
+     → Usa tu dirección real y pega tu enlace de Vercel.
+
+  2. Dominio propio (opcional, ~S/ 50 al año en namecheap.com
+     o donweb.com): compras "saborperuano.pe" y en Vercel →
+     Settings → Domains lo conectas.
+
+  3. Comparte tu enlace en grupos de Facebook de Nasca y ponlo
+     en la biografía de tu TikTok/Instagram.
+
+═══════════════════════════════════════════════════════════════════
